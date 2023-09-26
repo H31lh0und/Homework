@@ -1,19 +1,13 @@
-const node_for_click = document.getElementById("for_click")
+const node_for_click_all = document.getElementById("click")
 
-function find_edit(){
-    const item  = document.getElementsByTagName('span')[3].innerText
-    console.log(item.innerText)
-    item.innerText = 'Kramarenko'
+function find_edit_all(){
+    //const item  = document.getElementsByTagName('p')[0]
+    //console.log(item.innerText)
+   //item.innerText = 'новое Имя Ivan'
 
-function find_edit(){
-    const item  = document.getElementsByTagName('span')[4].innerText
-    console.log(item.innerText)
-    item.innerText = 'Polina'
+    document.getElementsByTagName('span')[3].innerText='Kramarenko'
+    document.getElementsByTagName('span')[4].innerText='Polina'
+    document.getElementsByTagName('span')[5].innerHTML='Vitalievna'
 
-function find_edit(){
-    const item  = document.getElementsByTagName('span')[5].innerText
-    console.log(item.innerText)
-    item.innerText = 'Vitalievna'
 }
-
-node_for_click.addEventListener("click",find_edit)
+node_for_click_all.addEventListener("click",find_edit_all)
